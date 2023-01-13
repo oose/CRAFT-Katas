@@ -1,0 +1,525 @@
+2023-01-10 14:06:00,790 [JavaFX-Launcher] INFO  (Breakout.java) - init
+2023-01-10 14:06:00,906 [JavaFX-Launcher] DEBUG (LoggerProviders.java) - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2023-01-10 14:06:00,988 [JavaFX-Launcher] DEBUG (HibernatePersistenceProvider.java) - Located and parsed 1 persistence units; checking each
+2023-01-10 14:06:00,988 [JavaFX-Launcher] DEBUG (HibernatePersistenceProvider.java) - Checking persistence-unit [name=breakout-jpa, explicit-provider=org.hibernate.jpa.HibernatePersistenceProvider] against incoming persistence unit name [breakout-jpa]
+2023-01-10 14:06:00,989 [JavaFX-Launcher] DEBUG (ProviderChecker.java) - Persistence-unit [breakout-jpa] requested PersistenceProvider [org.hibernate.jpa.HibernatePersistenceProvider]
+2023-01-10 14:06:00,992 [JavaFX-Launcher] DEBUG (LogHelper.java) - PersistenceUnitInfo [
+	name: breakout-jpa
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: null
+	excludeUnlistedClasses: false
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Seminare/TuP/Seminare/CRAFT/Standard/fallbeispiel_projekt/BreakOut_JavaFX/target/classes/
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names []
+	Mapping files names []
+	Properties [
+		hibernate.connection.username: sa
+		hibernate.dialect: org.hibernate.dialect.HSQLDialect
+		hibernate.show_sql: true
+		hibernate.connection.url: jdbc:hsqldb:file:data/breakoutdb;shutdown=true
+		hibernate.connection.driver_class: org.hsqldb.jdbc.JDBCDriver
+		hibernate.hbm2ddl.auto: update
+		hibernate.format_sql: true
+		hibernate.use_sql_comments: false]
+2023-01-10 14:06:00,994 [JavaFX-Launcher] DEBUG (IntegratorServiceImpl.java) - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2023-01-10 14:06:00,995 [JavaFX-Launcher] DEBUG (IntegratorServiceImpl.java) - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2023-01-10 14:06:00,997 [JavaFX-Launcher] DEBUG (IntegratorServiceImpl.java) - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2023-01-10 14:06:01,021 [JavaFX-Launcher] INFO  (Version.java) - HHH000412: Hibernate ORM core version [WORKING]
+2023-01-10 14:06:01,022 [JavaFX-Launcher] DEBUG (Environment.java) - HHH000206: hibernate.properties not found
+2023-01-10 14:06:01,120 [JavaFX-Launcher] DEBUG (ServiceBinding.java) - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2023-01-10 14:06:01,126 [JavaFX-Launcher] DEBUG (RegionFactoryInitiator.java) - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-01-10 14:06:01,127 [JavaFX-Launcher] DEBUG (RegionFactoryInitiator.java) - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-01-10 14:06:01,135 [JavaFX-Launcher] INFO  (JavaReflectionManager.java) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-10 14:06:01,327 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration boolean -> org.hibernate.type.BooleanType@777ac301
+2023-01-10 14:06:01,327 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration boolean -> org.hibernate.type.BooleanType@777ac301
+2023-01-10 14:06:01,327 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@777ac301
+2023-01-10 14:06:01,328 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2f8d6ebb
+2023-01-10 14:06:01,328 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration true_false -> org.hibernate.type.TrueFalseType@11ffbfd5
+2023-01-10 14:06:01,328 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration yes_no -> org.hibernate.type.YesNoType@25cd5b4e
+2023-01-10 14:06:01,330 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration byte -> org.hibernate.type.ByteType@77b396d1
+2023-01-10 14:06:01,330 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration byte -> org.hibernate.type.ByteType@77b396d1
+2023-01-10 14:06:01,330 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@77b396d1
+2023-01-10 14:06:01,331 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration character -> org.hibernate.type.CharacterType@2c374aff
+2023-01-10 14:06:01,331 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration char -> org.hibernate.type.CharacterType@2c374aff
+2023-01-10 14:06:01,331 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2c374aff
+2023-01-10 14:06:01,331 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration short -> org.hibernate.type.ShortType@147fba06
+2023-01-10 14:06:01,331 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration short -> org.hibernate.type.ShortType@147fba06
+2023-01-10 14:06:01,331 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@147fba06
+2023-01-10 14:06:01,332 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration integer -> org.hibernate.type.IntegerType@6392924c
+2023-01-10 14:06:01,333 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration int -> org.hibernate.type.IntegerType@6392924c
+2023-01-10 14:06:01,333 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6392924c
+2023-01-10 14:06:01,333 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration long -> org.hibernate.type.LongType@7c9c39e7
+2023-01-10 14:06:01,334 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration long -> org.hibernate.type.LongType@7c9c39e7
+2023-01-10 14:06:01,334 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7c9c39e7
+2023-01-10 14:06:01,334 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration float -> org.hibernate.type.FloatType@65a7efa5
+2023-01-10 14:06:01,334 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration float -> org.hibernate.type.FloatType@65a7efa5
+2023-01-10 14:06:01,335 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@65a7efa5
+2023-01-10 14:06:01,335 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration double -> org.hibernate.type.DoubleType@32ae162f
+2023-01-10 14:06:01,335 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration double -> org.hibernate.type.DoubleType@32ae162f
+2023-01-10 14:06:01,335 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@32ae162f
+2023-01-10 14:06:01,336 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@597fe2c7
+2023-01-10 14:06:01,336 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@597fe2c7
+2023-01-10 14:06:01,337 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3073cc0
+2023-01-10 14:06:01,337 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3073cc0
+2023-01-10 14:06:01,337 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration string -> org.hibernate.type.StringType@1e7173e3
+2023-01-10 14:06:01,337 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.lang.String -> org.hibernate.type.StringType@1e7173e3
+2023-01-10 14:06:01,338 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@442f13bd
+2023-01-10 14:06:01,338 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@891b078
+2023-01-10 14:06:01,338 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration url -> org.hibernate.type.UrlType@22de0655
+2023-01-10 14:06:01,338 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.net.URL -> org.hibernate.type.UrlType@22de0655
+2023-01-10 14:06:01,339 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration Duration -> org.hibernate.type.DurationType@7cd90627
+2023-01-10 14:06:01,339 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@7cd90627
+2023-01-10 14:06:01,344 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration Instant -> org.hibernate.type.InstantType@3c5ef44c
+2023-01-10 14:06:01,345 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@3c5ef44c
+2023-01-10 14:06:01,347 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@148d5f1a
+2023-01-10 14:06:01,347 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@148d5f1a
+2023-01-10 14:06:01,348 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@16d4e271
+2023-01-10 14:06:01,348 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@16d4e271
+2023-01-10 14:06:01,349 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@41a55dcb
+2023-01-10 14:06:01,350 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@41a55dcb
+2023-01-10 14:06:01,350 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@49d22cd3
+2023-01-10 14:06:01,350 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@49d22cd3
+2023-01-10 14:06:01,352 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3ff50645
+2023-01-10 14:06:01,353 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3ff50645
+2023-01-10 14:06:01,354 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@31686fc1
+2023-01-10 14:06:01,355 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@31686fc1
+2023-01-10 14:06:01,356 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration date -> org.hibernate.type.DateType@4e68acfc
+2023-01-10 14:06:01,356 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.sql.Date -> org.hibernate.type.DateType@4e68acfc
+2023-01-10 14:06:01,357 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration time -> org.hibernate.type.TimeType@e135ca4
+2023-01-10 14:06:01,357 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@e135ca4
+2023-01-10 14:06:01,357 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration timestamp -> org.hibernate.type.TimestampType@65da08c0
+2023-01-10 14:06:01,357 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@65da08c0
+2023-01-10 14:06:01,358 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@65da08c0
+2023-01-10 14:06:01,358 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@aa4cdbc
+2023-01-10 14:06:01,359 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration calendar -> org.hibernate.type.CalendarType@41291c67
+2023-01-10 14:06:01,359 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@41291c67
+2023-01-10 14:06:01,359 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@41291c67
+2023-01-10 14:06:01,361 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4f5ecba3
+2023-01-10 14:06:01,361 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@2c3aec72
+2023-01-10 14:06:01,362 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration locale -> org.hibernate.type.LocaleType@52ffecca
+2023-01-10 14:06:01,362 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@52ffecca
+2023-01-10 14:06:01,363 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration currency -> org.hibernate.type.CurrencyType@591fe9e0
+2023-01-10 14:06:01,363 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@591fe9e0
+2023-01-10 14:06:01,363 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration timezone -> org.hibernate.type.TimeZoneType@2f93d11f
+2023-01-10 14:06:01,363 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@2f93d11f
+2023-01-10 14:06:01,364 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration class -> org.hibernate.type.ClassType@26bfe06a
+2023-01-10 14:06:01,364 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@26bfe06a
+2023-01-10 14:06:01,364 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@5872668
+2023-01-10 14:06:01,364 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@5872668
+2023-01-10 14:06:01,365 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@3ec7e2d2
+2023-01-10 14:06:01,365 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration binary -> org.hibernate.type.BinaryType@6d29531a
+2023-01-10 14:06:01,365 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration byte[] -> org.hibernate.type.BinaryType@6d29531a
+2023-01-10 14:06:01,365 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration [B -> org.hibernate.type.BinaryType@6d29531a
+2023-01-10 14:06:01,366 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@22fd54e9
+2023-01-10 14:06:01,366 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@22fd54e9
+2023-01-10 14:06:01,366 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@22fd54e9
+2023-01-10 14:06:01,368 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration row_version -> org.hibernate.type.RowVersionType@279ca853
+2023-01-10 14:06:01,368 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration image -> org.hibernate.type.ImageType@5d16d492
+2023-01-10 14:06:01,370 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration characters -> org.hibernate.type.CharArrayType@46f5fa7a
+2023-01-10 14:06:01,370 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration char[] -> org.hibernate.type.CharArrayType@46f5fa7a
+2023-01-10 14:06:01,370 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration [C -> org.hibernate.type.CharArrayType@46f5fa7a
+2023-01-10 14:06:01,371 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@782acb51
+2023-01-10 14:06:01,371 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@782acb51
+2023-01-10 14:06:01,371 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@782acb51
+2023-01-10 14:06:01,372 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration text -> org.hibernate.type.TextType@6ffcb17e
+2023-01-10 14:06:01,372 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration ntext -> org.hibernate.type.NTextType@312fa1ed
+2023-01-10 14:06:01,373 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration blob -> org.hibernate.type.BlobType@db20cf9
+2023-01-10 14:06:01,373 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@db20cf9
+2023-01-10 14:06:01,374 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@d5114bc
+2023-01-10 14:06:01,375 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration clob -> org.hibernate.type.ClobType@5f6aa61
+2023-01-10 14:06:01,375 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@5f6aa61
+2023-01-10 14:06:01,376 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration nclob -> org.hibernate.type.NClobType@d838ed3
+2023-01-10 14:06:01,376 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@d838ed3
+2023-01-10 14:06:01,376 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@33ea4915
+2023-01-10 14:06:01,377 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@5c878959
+2023-01-10 14:06:01,378 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration serializable -> org.hibernate.type.SerializableType@6b301744
+2023-01-10 14:06:01,380 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration object -> org.hibernate.type.ObjectType@6b15d3ab
+2023-01-10 14:06:01,380 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@6b15d3ab
+2023-01-10 14:06:01,381 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5be35698
+2023-01-10 14:06:01,381 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@41b7395e
+2023-01-10 14:06:01,381 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@21b4e395
+2023-01-10 14:06:01,381 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4d454470
+2023-01-10 14:06:01,382 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@cd38cd6
+2023-01-10 14:06:01,382 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@745629db
+2023-01-10 14:06:01,382 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@72f8c48f
+2023-01-10 14:06:01,382 [JavaFX-Launcher] DEBUG (BasicTypeRegistry.java) - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@15f96864
+2023-01-10 14:06:01,389 [JavaFX-Launcher] DEBUG (BootstrapContextImpl.java) - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@2612be85] into BootstrapContext; was [null]
+2023-01-10 14:06:01,390 [JavaFX-Launcher] DEBUG (BootstrapContextImpl.java) - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@6ac58332] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@687e1041]
+2023-01-10 14:06:01,423 [JavaFX-Launcher] DEBUG (BootstrapContextImpl.java) - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [null]
+2023-01-10 14:06:01,423 [JavaFX-Launcher] DEBUG (ClassLoaderAccessImpl.java) - ClassLoaderAccessImpl#injectTempClassLoader(null) [was null]
+2023-01-10 14:06:01,428 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2023-01-10 14:06:01,429 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2023-01-10 14:06:01,429 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2023-01-10 14:06:01,429 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2023-01-10 14:06:01,429 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2023-01-10 14:06:01,430 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2023-01-10 14:06:01,430 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2023-01-10 14:06:01,430 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2023-01-10 14:06:01,431 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2023-01-10 14:06:01,431 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2023-01-10 14:06:01,433 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2023-01-10 14:06:01,434 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2023-01-10 14:06:01,434 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2023-01-10 14:06:01,435 [JavaFX-Launcher] DEBUG (DefaultIdentifierGeneratorFactory.java) - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2023-01-10 14:06:01,437 [JavaFX-Launcher] WARN  (DriverManagerConnectionProviderImpl.java) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2023-01-10 14:06:01,439 [JavaFX-Launcher] INFO  (DriverManagerConnectionProviderImpl.java) - HHH10001005: using driver [org.hsqldb.jdbc.JDBCDriver] at URL [jdbc:hsqldb:file:data/breakoutdb;shutdown=true]
+2023-01-10 14:06:01,439 [JavaFX-Launcher] INFO  (DriverManagerConnectionProviderImpl.java) - HHH10001001: Connection properties: {user=sa}
+2023-01-10 14:06:01,440 [JavaFX-Launcher] INFO  (DriverManagerConnectionProviderImpl.java) - HHH10001003: Autocommit mode: false
+2023-01-10 14:06:01,441 [JavaFX-Launcher] DEBUG (DelegatingBasicLogger.java) - Initializing Connection pool with 1 Connections
+2023-01-10 14:06:01,441 [JavaFX-Launcher] INFO  (DriverManagerConnectionProviderImpl.java) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-01-10 14:06:01,642 [JavaFX-Launcher] DEBUG (JdbcEnvironmentInitiator.java) - Database ->
+       name : HSQL Database Engine
+    version : 2.7.1
+      major : 2
+      minor : 7
+2023-01-10 14:06:01,642 [JavaFX-Launcher] DEBUG (JdbcEnvironmentInitiator.java) - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.7.1
+      major : 2
+      minor : 7
+2023-01-10 14:06:01,642 [JavaFX-Launcher] DEBUG (DelegatingBasicLogger.java) - JDBC version : 4.2
+2023-01-10 14:06:01,647 [JavaFX-Launcher] INFO  (Dialect.java) - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2023-01-10 14:06:01,654 [JavaFX-Launcher] DEBUG (IdentifierHelperBuilder.java) - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2023-01-10 14:06:01,669 [JavaFX-Launcher] DEBUG (Namespace.java) - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2023-01-10 14:06:01,671 [JavaFX-Launcher] DEBUG (TypeConfiguration.java) - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7d55e568] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@17e5ac3f]
+2023-01-10 14:06:01,695 [JavaFX-Launcher] DEBUG (AnnotationBinder.java) - Binding entity from annotated class: de.oose.breakout.highscore.HighScore
+2023-01-10 14:06:01,702 [JavaFX-Launcher] DEBUG (QueryBinder.java) - Binding named query: HighScore.getByName => SELECT h FROM HighScore h WHERE h.name = :name
+2023-01-10 14:06:01,704 [JavaFX-Launcher] DEBUG (Ejb3Column.java) - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2023-01-10 14:06:01,706 [JavaFX-Launcher] DEBUG (EntityBinder.java) - Import with entity name HighScore
+2023-01-10 14:06:01,708 [JavaFX-Launcher] DEBUG (EntityBinder.java) - Bind entity de.oose.breakout.highscore.HighScore on table HighScore
+2023-01-10 14:06:01,719 [JavaFX-Launcher] DEBUG (Ejb3Column.java) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(HighScore), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2023-01-10 14:06:01,721 [JavaFX-Launcher] DEBUG (ClassLoaderAccessImpl.java) - Not known whether passed class name [de.oose.breakout.highscore.HighScore] is safe
+2023-01-10 14:06:01,721 [JavaFX-Launcher] DEBUG (ClassLoaderAccessImpl.java) - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : de.oose.breakout.highscore.HighScore
+2023-01-10 14:06:01,721 [JavaFX-Launcher] DEBUG (PropertyBinder.java) - MetadataSourceProcessor property id with lazy=false
+2023-01-10 14:06:01,722 [JavaFX-Launcher] DEBUG (AbstractPropertyHolder.java) - Attempting to locate auto-apply AttributeConverter for property [de.oose.breakout.highscore.HighScore:id]
+2023-01-10 14:06:01,722 [JavaFX-Launcher] DEBUG (SimpleValueBinder.java) - building SimpleValue for id
+2023-01-10 14:06:01,723 [JavaFX-Launcher] DEBUG (PropertyBinder.java) - Building property id
+2023-01-10 14:06:01,726 [JavaFX-Launcher] DEBUG (BinderHelper.java) - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2023-01-10 14:06:01,726 [JavaFX-Launcher] DEBUG (Ejb3Column.java) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(HighScore), mappingColumn=date, insertable=true, updatable=true, unique=false}
+2023-01-10 14:06:01,726 [JavaFX-Launcher] DEBUG (PropertyBinder.java) - MetadataSourceProcessor property date with lazy=false
+2023-01-10 14:06:01,726 [JavaFX-Launcher] DEBUG (AbstractPropertyHolder.java) - Attempting to locate auto-apply AttributeConverter for property [de.oose.breakout.highscore.HighScore:date]
+2023-01-10 14:06:01,727 [JavaFX-Launcher] DEBUG (SimpleValueBinder.java) - building SimpleValue for date
+2023-01-10 14:06:01,727 [JavaFX-Launcher] DEBUG (PropertyBinder.java) - Building property date
+2023-01-10 14:06:01,727 [JavaFX-Launcher] DEBUG (Ejb3Column.java) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(HighScore), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2023-01-10 14:06:01,727 [JavaFX-Launcher] DEBUG (PropertyBinder.java) - MetadataSourceProcessor property name with lazy=false
+2023-01-10 14:06:01,727 [JavaFX-Launcher] DEBUG (AbstractPropertyHolder.java) - Attempting to locate auto-apply AttributeConverter for property [de.oose.breakout.highscore.HighScore:name]
+2023-01-10 14:06:01,727 [JavaFX-Launcher] DEBUG (SimpleValueBinder.java) - building SimpleValue for name
+2023-01-10 14:06:01,728 [JavaFX-Launcher] DEBUG (PropertyBinder.java) - Building property name
+2023-01-10 14:06:01,728 [JavaFX-Launcher] DEBUG (Ejb3Column.java) - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(HighScore), mappingColumn=score, insertable=true, updatable=true, unique=false}
+2023-01-10 14:06:01,728 [JavaFX-Launcher] DEBUG (PropertyBinder.java) - MetadataSourceProcessor property score with lazy=false
+2023-01-10 14:06:01,728 [JavaFX-Launcher] DEBUG (AbstractPropertyHolder.java) - Attempting to locate auto-apply AttributeConverter for property [de.oose.breakout.highscore.HighScore:score]
+2023-01-10 14:06:01,728 [JavaFX-Launcher] DEBUG (SimpleValueBinder.java) - building SimpleValue for score
+2023-01-10 14:06:01,728 [JavaFX-Launcher] DEBUG (PropertyBinder.java) - Building property score
+2023-01-10 14:06:01,731 [JavaFX-Launcher] DEBUG (SimpleValueBinder.java) - Starting fillSimpleValue for id
+2023-01-10 14:06:01,732 [JavaFX-Launcher] DEBUG (SimpleValueBinder.java) - Starting fillSimpleValue for date
+2023-01-10 14:06:01,733 [JavaFX-Launcher] DEBUG (SimpleValueBinder.java) - Starting fillSimpleValue for name
+2023-01-10 14:06:01,733 [JavaFX-Launcher] DEBUG (SimpleValueBinder.java) - Starting fillSimpleValue for score
+2023-01-10 14:06:01,737 [JavaFX-Launcher] DEBUG (PrimaryKey.java) - Forcing column [id] to be non-null as it is part of the primary key for table [highscore]
+2023-01-10 14:06:01,765 [JavaFX-Launcher] DEBUG (SessionFactoryImpl.java) - Building session factory
+2023-01-10 14:06:01,766 [JavaFX-Launcher] DEBUG (Settings.java) - SessionFactory name : null
+2023-01-10 14:06:01,766 [JavaFX-Launcher] DEBUG (Settings.java) - Automatic flush during beforeCompletion(): enabled
+2023-01-10 14:06:01,766 [JavaFX-Launcher] DEBUG (Settings.java) - Automatic session close at end of transaction: disabled
+2023-01-10 14:06:01,766 [JavaFX-Launcher] DEBUG (Settings.java) - Statistics: disabled
+2023-01-10 14:06:01,766 [JavaFX-Launcher] DEBUG (Settings.java) - Deleted entity synthetic identifier rollback: disabled
+2023-01-10 14:06:01,766 [JavaFX-Launcher] DEBUG (Settings.java) - Default entity-mode: pojo
+2023-01-10 14:06:01,766 [JavaFX-Launcher] DEBUG (Settings.java) - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2023-01-10 14:06:01,766 [JavaFX-Launcher] DEBUG (Settings.java) - Allow initialization of lazy state outside session : disabled
+2023-01-10 14:06:01,766 [JavaFX-Launcher] DEBUG (Settings.java) - Using BatchFetchStyle : LEGACY
+2023-01-10 14:06:01,766 [JavaFX-Launcher] DEBUG (Settings.java) - Default batch fetch size: -1
+2023-01-10 14:06:01,766 [JavaFX-Launcher] DEBUG (Settings.java) - Maximum outer join fetch depth: null
+2023-01-10 14:06:01,767 [JavaFX-Launcher] DEBUG (Settings.java) - Default null ordering: NONE
+2023-01-10 14:06:01,767 [JavaFX-Launcher] DEBUG (Settings.java) - Order SQL updates by primary key: disabled
+2023-01-10 14:06:01,767 [JavaFX-Launcher] DEBUG (Settings.java) - Order SQL inserts for batching: disabled
+2023-01-10 14:06:01,767 [JavaFX-Launcher] DEBUG (Settings.java) - multi-tenancy strategy : NONE
+2023-01-10 14:06:01,767 [JavaFX-Launcher] DEBUG (Settings.java) - JTA Track by Thread: enabled
+2023-01-10 14:06:01,767 [JavaFX-Launcher] DEBUG (Settings.java) - Query language substitutions: {}
+2023-01-10 14:06:01,768 [JavaFX-Launcher] DEBUG (Settings.java) - Named query checking : enabled
+2023-01-10 14:06:01,768 [JavaFX-Launcher] DEBUG (Settings.java) - Second-level cache: disabled
+2023-01-10 14:06:01,768 [JavaFX-Launcher] DEBUG (Settings.java) - Second-level query cache: disabled
+2023-01-10 14:06:01,768 [JavaFX-Launcher] DEBUG (Settings.java) - Second-level query cache factory: null
+2023-01-10 14:06:01,770 [JavaFX-Launcher] DEBUG (Settings.java) - Second-level cache region prefix: null
+2023-01-10 14:06:01,771 [JavaFX-Launcher] DEBUG (Settings.java) - Optimize second-level cache for minimal puts: disabled
+2023-01-10 14:06:01,772 [JavaFX-Launcher] DEBUG (Settings.java) - Structured second-level cache entries: disabled
+2023-01-10 14:06:01,772 [JavaFX-Launcher] DEBUG (Settings.java) - Second-level cache direct-reference entries: disabled
+2023-01-10 14:06:01,773 [JavaFX-Launcher] DEBUG (Settings.java) - Automatic eviction of collection cache: disabled
+2023-01-10 14:06:01,773 [JavaFX-Launcher] DEBUG (Settings.java) - JDBC batch size: 15
+2023-01-10 14:06:01,773 [JavaFX-Launcher] DEBUG (Settings.java) - JDBC batch updates for versioned data: enabled
+2023-01-10 14:06:01,773 [JavaFX-Launcher] DEBUG (Settings.java) - Scrollable result sets: enabled
+2023-01-10 14:06:01,773 [JavaFX-Launcher] DEBUG (Settings.java) - Wrap result sets: disabled
+2023-01-10 14:06:01,773 [JavaFX-Launcher] DEBUG (Settings.java) - JDBC3 getGeneratedKeys(): enabled
+2023-01-10 14:06:01,773 [JavaFX-Launcher] DEBUG (Settings.java) - JDBC result set fetch size: null
+2023-01-10 14:06:01,774 [JavaFX-Launcher] DEBUG (Settings.java) - Connection release mode: AFTER_TRANSACTION
+2023-01-10 14:06:01,774 [JavaFX-Launcher] DEBUG (Settings.java) - Generate SQL with comments: disabled
+2023-01-10 14:06:01,774 [JavaFX-Launcher] DEBUG (Settings.java) - JPA compliance - query : disabled
+2023-01-10 14:06:01,774 [JavaFX-Launcher] DEBUG (Settings.java) - JPA compliance - closed-handling : disabled
+2023-01-10 14:06:01,774 [JavaFX-Launcher] DEBUG (Settings.java) - JPA compliance - lists : disabled
+2023-01-10 14:06:01,774 [JavaFX-Launcher] DEBUG (Settings.java) - JPA compliance - transactions : disabled
+2023-01-10 14:06:01,804 [JavaFX-Launcher] DEBUG (SessionFactoryImpl.java) - Session factory constructed with filter configurations : {}
+2023-01-10 14:06:01,804 [JavaFX-Launcher] DEBUG (SessionFactoryImpl.java) - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, hibernate.format_sql=true, java.specification.version=11, javafx.runtime.version=18.0.1+2, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.HSQLDialect, java.class.path=C:\Users\markusl.OOSEDE\.m2\repository\org\openjfx\javafx-controls\18.0.1\javafx-controls-18.0.1.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\openjfx\javafx-graphics\18.0.1\javafx-graphics-18.0.1.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\openjfx\javafx-base\18.0.1\javafx-base-18.0.1.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\openjfx\javafx-fxml\18.0.1\javafx-fxml-18.0.1.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\apache\logging\log4j\log4j-core\2.18.0\log4j-core-2.18.0.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\openjfx\javafx-media\18.0.1\javafx-media-18.0.1.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\javassist\javassist\3.27.0-GA\javassist-3.27.0-GA.jar;C:\Users\markusl.OOSEDE\.m2\repository\net\bytebuddy\byte-buddy\1.11.12\byte-buddy-1.11.12.jar;C:\Users\markusl.OOSEDE\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar;C:\Users\markusl.OOSEDE\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\markusl.OOSEDE\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\markusl.OOSEDE\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\markusl.OOSEDE\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\markusl.OOSEDE\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar, java.vm.vendor=Eclipse Adoptium, sun.arch.data.model=64, user.variant=, java.vendor.url=https://adoptium.net/, user.timezone=Europe/Berlin, javax.persistence.jdbc.user=****, javax.persistence.jdbc.url=jdbc:hsqldb:file:data/breakoutdb;shutdown=true, os.name=Windows 11, java.vm.specification.version=11, javafx.version=18.0.1, sun.java.launcher=SUN_STANDARD, user.country=DE, local.setting.IS_JTA_TXN_COORD=false, sun.boot.library.path=C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin, sun.java.command=de.oose.breakout/de.oose.breakout.Breakout, hibernate.use_sql_comments=false, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\markusl.OOSEDE, user.language=de, java.specification.vendor=Oracle Corporation, jdk.module.path=C:\Users\markusl.OOSEDE\.m2\repository\org\hibernate\hibernate-core\5.4.33\hibernate-core-5.4.33.jar;C:\Seminare\TuP\Seminare\CRAFT\Standard\fallbeispiel_projekt\BreakOut_JavaFX\target\classes;C:\Users\markusl.OOSEDE\.m2\repository\org\openjfx\javafx-fxml\18.0.1\javafx-fxml-18.0.1-win.jar;C:\Users\markusl.OOSEDE\.m2\repository\com\dlsc\formsfx\formsfx-core\11.3.2\formsfx-core-11.3.2.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\openjfx\javafx-media\18.0.1\javafx-media-18.0.1-win.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\openjfx\javafx-graphics\18.0.1\javafx-graphics-18.0.1-win.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\kordamp\bootstrapfx\bootstrapfx-core\0.4.0\bootstrapfx-core-0.4.0.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\openjfx\javafx-base\18.0.1\javafx-base-18.0.1-win.jar;C:\Users\markusl.OOSEDE\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\hsqldb\hsqldb\2.7.1\hsqldb-2.7.1.jar;C:\Users\markusl.OOSEDE\.m2\repository\org\openjfx\javafx-controls\18.0.1\javafx-controls-18.0.1-win.jar, java.version.date=2022-10-18, java.home=C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, javax.persistence.jdbc.driver=org.hsqldb.jdbc.JDBCDriver, jdk.module.main.class=de.oose.breakout.Breakout, jdk.module.main=de.oose.breakout, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.17+8, user.name=MarkusL, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:hsqldb:file:data/breakoutdb;shutdown=true, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=breakout-jpa, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=Temurin-11.0.17+8, hibernate.connection.driver_class=org.hsqldb.jdbc.JDBCDriver, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, java.io.tmpdir=C:\Users\MARKUS~1.OOS\AppData\Local\Temp\, java.version=11.0.17, user.dir=C:\Seminare\TuP\Seminare\CRAFT\Standard\fallbeispiel_projekt\BreakOut_JavaFX, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@3ce76f26, java.library.path=C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-8.0.352.8-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Gradle\gradle-7.6\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\markusl.OOSEDE\AppData\Local\Microsoft\WindowsApps;;., java.vendor=Eclipse Adoptium, java.vm.info=mixed mode, java.vm.version=11.0.17+8, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, java.class.version=55.0}
+2023-01-10 14:06:01,811 [JavaFX-Launcher] DEBUG (JaccIntegrator.java) - Skipping JACC integration as it was not enabled
+2023-01-10 14:06:01,811 [JavaFX-Launcher] DEBUG (SessionFactoryImpl.java) - Instantiated session factory
+2023-01-10 14:06:01,811 [JavaFX-Launcher] DEBUG (TypeConfiguration.java) - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7d55e568] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@30319228]
+2023-01-10 14:06:01,835 [JavaFX-Launcher] DEBUG (ClassLoaderAccessImpl.java) - Not known whether passed class name [de.oose.breakout.highscore.HighScore] is safe
+2023-01-10 14:06:01,836 [JavaFX-Launcher] DEBUG (ClassLoaderAccessImpl.java) - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : de.oose.breakout.highscore.HighScore
+2023-01-10 14:06:01,974 [JavaFX-Launcher] DEBUG (AbstractEntityPersister.java) - Static SQL for entity: de.oose.breakout.highscore.HighScore
+2023-01-10 14:06:01,974 [JavaFX-Launcher] DEBUG (AbstractEntityPersister.java) -  Version select: select id from HighScore where id =?
+2023-01-10 14:06:01,974 [JavaFX-Launcher] DEBUG (AbstractEntityPersister.java) -  Snapshot select: select highscore_.id, highscore_.date as date2_0_, highscore_.name as name3_0_, highscore_.score as score4_0_ from HighScore highscore_ where highscore_.id=?
+2023-01-10 14:06:01,975 [JavaFX-Launcher] DEBUG (DelegatingBasicLogger.java) -  Insert 0: insert into HighScore (date, name, score, id) values (?, ?, ?, ?)
+2023-01-10 14:06:01,975 [JavaFX-Launcher] DEBUG (DelegatingBasicLogger.java) -  Update 0: update HighScore set date=?, name=?, score=? where id=?
+2023-01-10 14:06:01,975 [JavaFX-Launcher] DEBUG (DelegatingBasicLogger.java) -  Delete 0: delete from HighScore where id=?
+2023-01-10 14:06:01,975 [JavaFX-Launcher] DEBUG (AbstractEntityPersister.java) -  Identity insert: insert into HighScore (id, date, name, score) values (null, ?, ?, ?)
+2023-01-10 14:06:01,986 [JavaFX-Launcher] DEBUG (QuerySpacesImpl.java) - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@20e3a4df]
+2023-01-10 14:06:01,987 [JavaFX-Launcher] DEBUG (MetamodelGraphWalker.java) - Visiting attribute path : date
+2023-01-10 14:06:01,987 [JavaFX-Launcher] DEBUG (MetamodelGraphWalker.java) - Visiting attribute path : name
+2023-01-10 14:06:01,987 [JavaFX-Launcher] DEBUG (MetamodelGraphWalker.java) - Visiting attribute path : score
+2023-01-10 14:06:01,987 [JavaFX-Launcher] DEBUG (FetchStyleLoadPlanBuildingAssociationVisitationStrategy.java) - Building LoadPlan...
+2023-01-10 14:06:01,993 [JavaFX-Launcher] DEBUG (LoadQueryJoinAndFetchProcessor.java) - processing queryspace <gen:0>
+2023-01-10 14:06:01,996 [JavaFX-Launcher] DEBUG (LoadPlanTreePrinter.java) - LoadPlan(entity=de.oose.breakout.highscore.HighScore)
+    - Returns
+       - EntityReturnImpl(entity=de.oose.breakout.highscore.HighScore, querySpaceUid=<gen:0>, path=de.oose.breakout.highscore.HighScore)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=de.oose.breakout.highscore.HighScore)
+          - SQL table alias mapping - highscore0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2023-01-10 14:06:01,998 [JavaFX-Launcher] DEBUG (EntityLoader.java) - Static select for entity de.oose.breakout.highscore.HighScore [NONE]: select highscore0_.id as id1_0_0_, highscore0_.date as date2_0_0_, highscore0_.name as name3_0_0_, highscore0_.score as score4_0_0_ from HighScore highscore0_ where highscore0_.id=?
+2023-01-10 14:06:02,017 [JavaFX-Launcher] INFO  (DdlTransactionIsolatorNonJtaImpl.java) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@36c5e11a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2023-01-10 14:06:02,048 [JavaFX-Launcher] DEBUG (Table.java) - No alter strings for table : HighScore
+2023-01-10 14:06:02,050 [JavaFX-Launcher] DEBUG (JtaPlatformInitiator.java) - No JtaPlatform was specified, checking resolver
+2023-01-10 14:06:02,052 [JavaFX-Launcher] DEBUG (JtaPlatformResolverInitiator.java) - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2023-01-10 14:06:02,056 [JavaFX-Launcher] DEBUG (StandardJtaPlatformResolver.java) - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-10 14:06:02,057 [JavaFX-Launcher] INFO  (JtaPlatformInitiator.java) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-10 14:06:02,059 [JavaFX-Launcher] DEBUG (NamedQueryRepository.java) - Checking 1 named HQL queries
+2023-01-10 14:06:02,060 [JavaFX-Launcher] DEBUG (NamedQueryRepository.java) - Checking named query: HighScore.getByName
+2023-01-10 14:06:02,072 [JavaFX-Launcher] DEBUG (StatisticsInitiator.java) - Statistics initialized [enabled=false]
+2023-01-10 14:06:02,077 [JavaFX-Launcher] DEBUG (QueryTranslatorFactoryInitiator.java) - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@3ae3742
+2023-01-10 14:06:02,098 [JavaFX-Launcher] DEBUG (QueryTranslatorImpl.java) - parse() - HQL: SELECT h FROM de.oose.breakout.highscore.HighScore h WHERE h.name = :name
+2023-01-10 14:06:02,102 [JavaFX-Launcher] DEBUG (ErrorTracker.java) - throwQueryException() : no errors
+2023-01-10 14:06:02,106 [JavaFX-Launcher] DEBUG (QueryTranslatorImpl.java) - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'FROM'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[IDENT] Node: 'de'
+    |  |     |  |  |  |  \-[IDENT] Node: 'oose'
+    |  |     |  |  |  \-[IDENT] Node: 'breakout'
+    |  |     |  |  \-[IDENT] Node: 'highscore'
+    |  |     |  \-[IDENT] Node: 'HighScore'
+    |  |     \-[ALIAS] Node: 'h'
+    |  \-[SELECT] Node: 'SELECT'
+    |     \-[IDENT] Node: 'h'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'h'
+          |  \-[IDENT] Node: 'name'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'name'
+
+2023-01-10 14:06:02,116 [JavaFX-Launcher] DEBUG (HqlSqlBaseWalker.java) - select << begin [level=1, statement=select]
+2023-01-10 14:06:02,122 [JavaFX-Launcher] DEBUG (FromElement.java) - FromClause{level=1} : de.oose.breakout.highscore.HighScore (h) -> highscore0_
+2023-01-10 14:06:02,122 [JavaFX-Launcher] DEBUG (FromReferenceNode.java) - Resolved : h -> highscore0_.id
+2023-01-10 14:06:02,124 [JavaFX-Launcher] DEBUG (FromReferenceNode.java) - Resolved : h -> highscore0_.id
+2023-01-10 14:06:02,124 [JavaFX-Launcher] DEBUG (DotNode.java) - getDataType() : name -> org.hibernate.type.StringType@1e7173e3
+2023-01-10 14:06:02,124 [JavaFX-Launcher] DEBUG (FromReferenceNode.java) - Resolved : h.name -> highscore0_.name
+2023-01-10 14:06:02,125 [JavaFX-Launcher] DEBUG (HqlSqlBaseWalker.java) - select : finishing up [level=1, statement=select]
+2023-01-10 14:06:02,125 [JavaFX-Launcher] DEBUG (HqlSqlWalker.java) - processQuery() :  ( SELECT ( {select clause} highscore0_.id ) ( FromClause{level=1} HighScore highscore0_ ) ( WHERE ( = ( highscore0_.name highscore0_.id name ) ? ) ) )
+2023-01-10 14:06:02,128 [JavaFX-Launcher] DEBUG (JoinProcessor.java) - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity HighScore): [HighScore]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(de.oose.breakout.highscore.HighScore)
+    |  | originalText: h
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-BinaryLogicOperatorNode
+          +-DotNode
+          | persister: SingleTableEntityPersister(de.oose.breakout.highscore.HighScore)
+          | path: h.name
+          |  +-IdentNode
+          |  | persister: SingleTableEntityPersister(de.oose.breakout.highscore.HighScore)
+          |  | originalText: h
+          |  \-IdentNode
+          |    persister: null
+          |    originalText: name
+          \-ParameterNode
+
+2023-01-10 14:06:02,131 [JavaFX-Launcher] DEBUG (JoinProcessor.java) - Using FROM fragment [HighScore highscore0_]
+2023-01-10 14:06:02,132 [JavaFX-Launcher] DEBUG (HqlSqlBaseWalker.java) - select >> end [level=1, statement=select]
+2023-01-10 14:06:02,133 [JavaFX-Launcher] DEBUG (QueryTranslatorImpl.java) - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (HighScore)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'highscore0_.id as id1_0_' {alias=h, className=de.oose.breakout.highscore.HighScore, tableAlias=highscore0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'highscore0_.date as date2_0_, highscore0_.name as name3_0_, highscore0_.score as score4_0_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[h], fromElementByTableAlias=[highscore0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'HighScore highscore0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=h,role=null,tableName=HighScore,tableAlias=highscore0_,origin=null,columns={,className=de.oose.breakout.highscore.HighScore}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'highscore0_.name' {propertyName=name,dereferenceType=PRIMITIVE,getPropertyPath=name,path=h.name,tableAlias=highscore0_,className=de.oose.breakout.highscore.HighScore,classAlias=h}
+          |  +-[ALIAS_REF] IdentNode: 'highscore0_.id' {alias=h, className=de.oose.breakout.highscore.HighScore, tableAlias=highscore0_}
+          |  \-[IDENT] IdentNode: 'name' {originalText=name}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=name, expectedType=org.hibernate.type.StringType@1e7173e3}
+
+2023-01-10 14:06:02,133 [JavaFX-Launcher] DEBUG (ErrorTracker.java) - throwQueryException() : no errors
+2023-01-10 14:06:02,137 [JavaFX-Launcher] DEBUG (QueryTranslatorImpl.java) - HQL: SELECT h FROM de.oose.breakout.highscore.HighScore h WHERE h.name = :name
+2023-01-10 14:06:02,137 [JavaFX-Launcher] DEBUG (QueryTranslatorImpl.java) - SQL: select highscore0_.id as id1_0_, highscore0_.date as date2_0_, highscore0_.name as name3_0_, highscore0_.score as score4_0_ from HighScore highscore0_ where highscore0_.name=?
+2023-01-10 14:06:02,137 [JavaFX-Launcher] DEBUG (ErrorTracker.java) - throwQueryException() : no errors
+2023-01-10 14:06:02,141 [JavaFX-Launcher] DEBUG (NamedQueryRepository.java) - Checking 0 named SQL queries
+2023-01-10 14:06:02,145 [JavaFX-Launcher] DEBUG (SessionFactoryRegistry.java) - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@41f1082f
+2023-01-10 14:06:02,146 [JavaFX-Launcher] DEBUG (SessionFactoryRegistry.java) - Registering SessionFactory: 8784da27-f60a-41c2-b0d6-d734d0355151 (<unnamed>)
+2023-01-10 14:06:02,147 [JavaFX-Launcher] DEBUG (SessionFactoryRegistry.java) - Not binding SessionFactory to JNDI, no JNDI name configured
+2023-01-10 14:06:02,174 [JavaFX-Launcher] DEBUG (TransactionImpl.java) - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-01-10 14:06:02,174 [JavaFX-Launcher] DEBUG (TransactionImpl.java) - begin
+2023-01-10 14:06:02,183 [JavaFX-Launcher] DEBUG (QueryTranslatorImpl.java) - parse() - HQL: SELECT h FROM de.oose.breakout.highscore.HighScore h
+2023-01-10 14:06:02,184 [JavaFX-Launcher] DEBUG (ErrorTracker.java) - throwQueryException() : no errors
+2023-01-10 14:06:02,185 [JavaFX-Launcher] DEBUG (QueryTranslatorImpl.java) - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'FROM'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'de'
+       |     |  |  |  |  \-[IDENT] Node: 'oose'
+       |     |  |  |  \-[IDENT] Node: 'breakout'
+       |     |  |  \-[IDENT] Node: 'highscore'
+       |     |  \-[IDENT] Node: 'HighScore'
+       |     \-[ALIAS] Node: 'h'
+       \-[SELECT] Node: 'SELECT'
+          \-[IDENT] Node: 'h'
+
+2023-01-10 14:06:02,185 [JavaFX-Launcher] DEBUG (HqlSqlBaseWalker.java) - select << begin [level=1, statement=select]
+2023-01-10 14:06:02,185 [JavaFX-Launcher] DEBUG (FromElement.java) - FromClause{level=1} : de.oose.breakout.highscore.HighScore (h) -> highscore0_
+2023-01-10 14:06:02,185 [JavaFX-Launcher] DEBUG (FromReferenceNode.java) - Resolved : h -> highscore0_.id
+2023-01-10 14:06:02,185 [JavaFX-Launcher] DEBUG (HqlSqlBaseWalker.java) - select : finishing up [level=1, statement=select]
+2023-01-10 14:06:02,185 [JavaFX-Launcher] DEBUG (HqlSqlWalker.java) - processQuery() :  ( SELECT ( {select clause} highscore0_.id ) ( FromClause{level=1} HighScore highscore0_ ) )
+2023-01-10 14:06:02,185 [JavaFX-Launcher] DEBUG (JoinProcessor.java) - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity HighScore): [HighScore]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(de.oose.breakout.highscore.HighScore)
+    |  | originalText: h
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+2023-01-10 14:06:02,186 [JavaFX-Launcher] DEBUG (JoinProcessor.java) - Using FROM fragment [HighScore highscore0_]
+2023-01-10 14:06:02,186 [JavaFX-Launcher] DEBUG (HqlSqlBaseWalker.java) - select >> end [level=1, statement=select]
+2023-01-10 14:06:02,186 [JavaFX-Launcher] DEBUG (QueryTranslatorImpl.java) - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (HighScore)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'highscore0_.id as id1_0_' {alias=h, className=de.oose.breakout.highscore.HighScore, tableAlias=highscore0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'highscore0_.date as date2_0_, highscore0_.name as name3_0_, highscore0_.score as score4_0_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[h], fromElementByTableAlias=[highscore0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'HighScore highscore0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=h,role=null,tableName=HighScore,tableAlias=highscore0_,origin=null,columns={,className=de.oose.breakout.highscore.HighScore}}
+
+2023-01-10 14:06:02,186 [JavaFX-Launcher] DEBUG (ErrorTracker.java) - throwQueryException() : no errors
+2023-01-10 14:06:02,186 [JavaFX-Launcher] DEBUG (QueryTranslatorImpl.java) - HQL: SELECT h FROM de.oose.breakout.highscore.HighScore h
+2023-01-10 14:06:02,186 [JavaFX-Launcher] DEBUG (QueryTranslatorImpl.java) - SQL: select highscore0_.id as id1_0_, highscore0_.date as date2_0_, highscore0_.name as name3_0_, highscore0_.score as score4_0_ from HighScore highscore0_
+2023-01-10 14:06:02,186 [JavaFX-Launcher] DEBUG (ErrorTracker.java) - throwQueryException() : no errors
+2023-01-10 14:06:02,191 [JavaFX-Launcher] DEBUG (SqlStatementLogger.java) - 
+    select
+        highscore0_.id as id1_0_,
+        highscore0_.date as date2_0_,
+        highscore0_.name as name3_0_,
+        highscore0_.score as score4_0_ 
+    from
+        HighScore highscore0_
+2023-01-10 14:06:02,195 [JavaFX-Launcher] DEBUG (DelegatingBasicLogger.java) - Result set row: 0
+2023-01-10 14:06:02,197 [JavaFX-Launcher] DEBUG (Loader.java) - Result row: EntityKey[de.oose.breakout.highscore.HighScore#1]
+2023-01-10 14:06:02,201 [JavaFX-Launcher] DEBUG (DelegatingBasicLogger.java) - Result set row: 1
+2023-01-10 14:06:02,201 [JavaFX-Launcher] DEBUG (Loader.java) - Result row: EntityKey[de.oose.breakout.highscore.HighScore#2]
+2023-01-10 14:06:02,201 [JavaFX-Launcher] DEBUG (DelegatingBasicLogger.java) - Result set row: 2
+2023-01-10 14:06:02,201 [JavaFX-Launcher] DEBUG (Loader.java) - Result row: EntityKey[de.oose.breakout.highscore.HighScore#3]
+2023-01-10 14:06:02,201 [JavaFX-Launcher] DEBUG (DelegatingBasicLogger.java) - Result set row: 3
+2023-01-10 14:06:02,201 [JavaFX-Launcher] DEBUG (Loader.java) - Result row: EntityKey[de.oose.breakout.highscore.HighScore#22]
+2023-01-10 14:06:02,204 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Resolving attributes for [de.oose.breakout.highscore.HighScore#1]
+2023-01-10 14:06:02,205 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `date` : value = 2019-01-18
+2023-01-10 14:06:02,205 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`date`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,205 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `name` : value = Heinz
+2023-01-10 14:06:02,205 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`name`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,205 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `score` : value = 3000
+2023-01-10 14:06:02,205 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`score`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,206 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Done materializing entity [de.oose.breakout.highscore.HighScore#1]
+2023-01-10 14:06:02,207 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Resolving attributes for [de.oose.breakout.highscore.HighScore#2]
+2023-01-10 14:06:02,207 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `date` : value = 2019-01-18
+2023-01-10 14:06:02,207 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`date`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,207 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `name` : value = EasyMock
+2023-01-10 14:06:02,207 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`name`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,207 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `score` : value = 2000
+2023-01-10 14:06:02,207 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`score`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,207 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Done materializing entity [de.oose.breakout.highscore.HighScore#2]
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Resolving attributes for [de.oose.breakout.highscore.HighScore#3]
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `date` : value = 2019-01-18
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`date`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `name` : value = jMosk
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`name`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `score` : value = 1000
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`score`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Done materializing entity [de.oose.breakout.highscore.HighScore#3]
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Resolving attributes for [de.oose.breakout.highscore.HighScore#22]
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `date` : value = 2019-07-17
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`date`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `name` : value = Hermann
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`name`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Processing attribute `score` : value = 3000
+2023-01-10 14:06:02,208 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Attribute (`score`)  - enhanced for lazy-loading? - false
+2023-01-10 14:06:02,210 [JavaFX-Launcher] DEBUG (TwoPhaseLoad.java) - Done materializing entity [de.oose.breakout.highscore.HighScore#22]
+2023-01-10 14:06:02,212 [JavaFX-Launcher] DEBUG (AbstractFlushingEventListener.java) - Processing flush-time cascades
+2023-01-10 14:06:02,216 [JavaFX-Launcher] DEBUG (AbstractFlushingEventListener.java) - Dirty checking collections
+2023-01-10 14:06:02,220 [JavaFX-Launcher] DEBUG (AbstractFlushingEventListener.java) - Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
+2023-01-10 14:06:02,220 [JavaFX-Launcher] DEBUG (AbstractFlushingEventListener.java) - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-01-10 14:06:02,221 [JavaFX-Launcher] DEBUG (EntityPrinter.java) - Listing entities:
+2023-01-10 14:06:02,221 [JavaFX-Launcher] DEBUG (EntityPrinter.java) - de.oose.breakout.highscore.HighScore{date=2019-01-18, score=2000, name=EasyMock, id=2}
+2023-01-10 14:06:02,221 [JavaFX-Launcher] DEBUG (EntityPrinter.java) - de.oose.breakout.highscore.HighScore{date=2019-01-18, score=3000, name=Heinz, id=1}
+2023-01-10 14:06:02,221 [JavaFX-Launcher] DEBUG (EntityPrinter.java) - de.oose.breakout.highscore.HighScore{date=2019-01-18, score=1000, name=jMosk, id=3}
+2023-01-10 14:06:02,221 [JavaFX-Launcher] DEBUG (EntityPrinter.java) - de.oose.breakout.highscore.HighScore{date=2019-07-17, score=3000, name=Hermann, id=22}
+2023-01-10 14:06:02,222 [JavaFX-Launcher] DEBUG (TransactionImpl.java) - committing
+2023-01-10 14:06:02,222 [JavaFX-Launcher] DEBUG (AbstractFlushingEventListener.java) - Processing flush-time cascades
+2023-01-10 14:06:02,222 [JavaFX-Launcher] DEBUG (AbstractFlushingEventListener.java) - Dirty checking collections
+2023-01-10 14:06:02,222 [JavaFX-Launcher] DEBUG (AbstractFlushingEventListener.java) - Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
+2023-01-10 14:06:02,222 [JavaFX-Launcher] DEBUG (AbstractFlushingEventListener.java) - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-01-10 14:06:02,222 [JavaFX-Launcher] DEBUG (EntityPrinter.java) - Listing entities:
+2023-01-10 14:06:02,222 [JavaFX-Launcher] DEBUG (EntityPrinter.java) - de.oose.breakout.highscore.HighScore{date=2019-01-18, score=2000, name=EasyMock, id=2}
+2023-01-10 14:06:02,223 [JavaFX-Launcher] DEBUG (EntityPrinter.java) - de.oose.breakout.highscore.HighScore{date=2019-01-18, score=3000, name=Heinz, id=1}
+2023-01-10 14:06:02,223 [JavaFX-Launcher] DEBUG (EntityPrinter.java) - de.oose.breakout.highscore.HighScore{date=2019-01-18, score=1000, name=jMosk, id=3}
+2023-01-10 14:06:02,223 [JavaFX-Launcher] DEBUG (EntityPrinter.java) - de.oose.breakout.highscore.HighScore{date=2019-07-17, score=3000, name=Hermann, id=22}
+2023-01-10 14:06:02,225 [JavaFX-Launcher] DEBUG (LogicalConnectionManagedImpl.java) - Initiating JDBC connection release from afterTransaction
+2023-01-10 14:06:02,225 [JavaFX-Launcher] DEBUG (LogicalConnectionManagedImpl.java) - Initiating JDBC connection release from afterTransaction
+2023-01-10 14:06:02,225 [JavaFX-Launcher] DEBUG (SessionFactoryImpl.java) - HHH000031: Closing
+2023-01-10 14:06:02,226 [JavaFX-Launcher] DEBUG (TypeConfiguration.java) - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@6329df71] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@30319228]
+2023-01-10 14:06:02,226 [JavaFX-Launcher] DEBUG (AbstractServiceRegistryImpl.java) - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2023-01-10 14:06:02,226 [JavaFX-Launcher] INFO  (DriverManagerConnectionProviderImpl.java) - HHH10001008: Cleaning up connection pool [jdbc:hsqldb:file:data/breakoutdb;shutdown=true]
+2023-01-10 14:06:02,354 [JavaFX-Launcher] DEBUG (BootstrapServiceRegistryImpl.java) - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2023-01-10 14:06:02,363 [JavaFX-Launcher] INFO  (Tile.java) - create token: Token [character=N, points=40]
+2023-01-10 14:06:02,366 [JavaFX-Launcher] INFO  (Tile.java) - create token: Token [character=N, points=40]
+2023-01-10 14:06:02,375 [JavaFX-Launcher] INFO  (Tile.java) - create token: Token [character=L, points=100]
+2023-01-10 14:06:02,378 [JavaFX-Launcher] INFO  (Tile.java) - create token: Token [character=H, points=50]
+2023-01-10 14:06:02,380 [JavaFX-Launcher] INFO  (Tile.java) - create token: Token [character=S, points=80]
+2023-01-10 14:06:02,381 [JavaFX-Launcher] INFO  (Tile.java) - create token: Token [character=S, points=80]
+2023-01-10 14:06:02,388 [JavaFX-Launcher] INFO  (Tile.java) - create token: Token [character=N, points=40]
+2023-01-10 14:06:02,390 [JavaFX-Launcher] INFO  (Tile.java) - create token: Token [character=S, points=80]
+2023-01-10 14:06:02,394 [JavaFX-Launcher] INFO  (Tile.java) - create token: Token [character=D, points=30]
+2023-01-10 14:06:02,395 [JavaFX-Launcher] INFO  (Tile.java) - create token: Token [character=S, points=80]
+2023-01-10 14:06:02,396 [JavaFX-Launcher] INFO  (Tile.java) - create token: Token [character=S, points=80]
+2023-01-10 14:06:02,417 [JavaFX Application Thread] INFO  (Breakout.java) - start
+2023-01-10 14:06:07,008 [JavaFX Application Thread] INFO  (Breakout.java) - found token: Token [character=S, points=80]
+2023-01-10 14:06:07,010 [JavaFX Application Thread] INFO  (Breakout.java) - hit Tile
+2023-01-10 14:06:13,224 [JavaFX Application Thread] INFO  (Breakout.java) - stop
