@@ -12,6 +12,7 @@ module de.oose.breakout {
     requires java.sql;
     requires org.hsqldb;
     requires org.hibernate.orm.core;
+    requires javafx.graphics;
 
     opens de.oose.breakout.highscore;
     exports de.oose.breakout;
