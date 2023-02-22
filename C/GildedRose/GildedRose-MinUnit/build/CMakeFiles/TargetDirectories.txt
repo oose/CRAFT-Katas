@@ -1,0 +1,8 @@
+/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/build/CMakeFiles/rebuild_cache.dir
+/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/build/CMakeFiles/edit_cache.dir
+/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/build/GildedRose/CMakeFiles/rebuild_cache.dir
+/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/build/GildedRose/CMakeFiles/GildedRose.dir
+/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/build/GildedRose/CMakeFiles/edit_cache.dir
+/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/build/main/CMakeFiles/rebuild_cache.dir
+/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/build/main/CMakeFiles/main.dir
+/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/build/main/CMakeFiles/edit_cache.dir
