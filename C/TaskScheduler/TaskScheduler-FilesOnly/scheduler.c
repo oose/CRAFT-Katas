@@ -29,6 +29,7 @@ task_t tasks[10];
 int ntasks = 0;
 unsigned int ticklength;
 clock_t startclock;
+int init_done = 0;
 
 static void sleep_ms(int milliseconds) // cross-platform sleep function
 {
@@ -82,11 +83,16 @@ static int idle(void){
 	return 0;
 }
 
-static void init(void)
+void default_init(void)
 {
 	unsigned int fint = get_int_option_value("f_interval");
 	unsigned int gint = get_int_option_value("g_interval");
 	unsigned int hint = get_int_option_value("h_interval");
+
+	if (fint == 0 || gint == 0 || hint == 0){
+		fprintf(stderr, "Invalid config parameters. Exiting.\n");
+		exit(1);
+	}
 
 	ticklength = gcd(fint, gcd(gint, hint));
 	printf("Tick length = %u ms\n", ticklength);
@@ -108,6 +114,7 @@ static void init(void)
 	tasks[3].last_exec = 0;
 	ntasks = 4;
 	startclock = clock();
+	init_done = 1;
 }
 
 
@@ -119,8 +126,9 @@ static int compare_by_prio(const void* t1, const void* t2)
 
 void execute_schedule(void)
 {
+	if (!init_done) default_init();
+
 	int i = 0;
-	init();
 	if (ntasks == 0) exit(1);
 	qsort(tasks, ntasks, sizeof(task_t), compare_by_prio);
 

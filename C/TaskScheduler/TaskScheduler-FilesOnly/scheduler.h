@@ -24,9 +24,13 @@ typedef struct task_t
 
 extern task_t tasks[10];
 extern int ntasks;
+extern int init_done;
 
 void execute_schedule(void);
 unsigned int gcd(unsigned int, unsigned int);
+
+/* Init scheduler */
+void default_init(void);
 
 //Scheduled functions
 int f(void);
