@@ -10,12 +10,14 @@ int tests_run = 0;
 static char* test_SuccessfulTest(void)
 {
     mu_assert(1, "You will never see this message.");
+    return 0;
 }
 
 static char* test_GettingOptionValueForEmptyStringShouldYieldEmptyString(void)
 {
     const char* value = get_option_value("");
     mu_assert(strcmp(value,"") == 0, "Invalid string returned by get_option_value");
+    return 0;
 }
 
 static char* run_all_tests(){

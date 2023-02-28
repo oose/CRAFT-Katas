@@ -10,6 +10,7 @@ int tests_run = 0;
 static char* test_SuccessfulTest(void)
 {
     mu_assert(1, "You will never see this message.");
+    return 0;
 }
 
 static char* run_all_tests(){
