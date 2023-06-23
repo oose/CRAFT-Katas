@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/build",
+  "command": "/usr/bin/x86_64-linux-gnu-gcc-7   -g   -o GildedRose/CMakeFiles/GildedRose.dir/GildedRose.c.o   -c /home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/GildedRose/GildedRose.c",
+  "file": "/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/GildedRose/GildedRose.c"
+},
+
+{
+  "directory": "/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/build",
+  "command": "/usr/bin/x86_64-linux-gnu-gcc-7  -I../main/../GildedRose  -g   -o main/CMakeFiles/main.dir/main.c.o   -c /home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/main/main.c",
+  "file": "/home/oose/git/CRAFT-Katas/C/GildedRose/GildedRose-MinUnit/main/main.c"
+}
+]

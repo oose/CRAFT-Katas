@@ -1,0 +1,13 @@
+f_interval = #Configure schedule frequency for f()
+		  1000
+f_prio=1
+
+ #Configuration for g and h follows
+g_interval=200
+g_prio=2
+debug= on
+h_interval
+= 
+500 h_prio=3
+
+h_interval=400#no, we prefer 400 instead!
