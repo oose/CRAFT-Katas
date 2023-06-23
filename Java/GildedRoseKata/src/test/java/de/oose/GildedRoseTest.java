@@ -2,8 +2,11 @@ package de.oose;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.DisplayNameGeneration;
+import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Test;
 
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class GildedRoseTest {
 
 	private static final String BACKSTAGE_PASSES = "Backstage passes to a TAFKAL80ETC concert";
@@ -43,7 +46,7 @@ class GildedRoseTest {
 	}
 
 	@Test
-	public void aged_brie__actually_increases_in_quality_the_older_it_gets() throws Exception {
+	public void aged_brie_actually_increases_in_quality_the_older_it_gets() throws Exception {
 		createItemWithSellinAndquality(AGED_BRIE, 10, 10);
 		doUpdatequality();
 		verifyItemIs(AGED_BRIE, 9, 11);
