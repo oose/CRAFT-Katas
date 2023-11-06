@@ -1,0 +1,1 @@
+add_library(TripService TripService.cpp TripServiceDependencies.cpp)

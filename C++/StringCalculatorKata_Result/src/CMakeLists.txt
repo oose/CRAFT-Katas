@@ -1,3 +1,1 @@
 add_library(StringCalculator StringCalculator.cpp)
-
-target_include_directories(StringCalculator PUBLIC include)

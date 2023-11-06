@@ -3,7 +3,7 @@
 std::list<Trip> TripService::getTripsByUser(User user)
 {
   std::list<Trip> triplist;
-  User* loggedUser = UserSession::GetInstance()->GetLoggedUser();
+  User* loggedUser = getLoggedUserFromSession();
   bool isFriend = false;
   if ( loggedUser )
   {
@@ -18,7 +18,7 @@ std::list<Trip> TripService::getTripsByUser(User user)
     }
     if (isFriend)
     {
-      triplist = TripDAO::FindTripsByUser(user);
+      triplist = findTripsByUser(user);
     }
     return triplist;
   }
@@ -26,4 +26,12 @@ std::list<Trip> TripService::getTripsByUser(User user)
   {
     throw "UserNotLoggedInException";
   }
+}
+
+User* TripService::getLoggedUserFromSession() const {
+  return UserSession::GetInstance()->GetLoggedUser();
+} 
+
+std::list<Trip> TripService::findTripsByUser(User user) const{
+  return TripDAO::FindTripsByUser(user);
 }

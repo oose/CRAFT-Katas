@@ -5,15 +5,15 @@
 
 class TripServiceTestadapter: public TripService {
 public:
-  void setLoggedUser(UserPtr loggedUser);
+  void setLoggedUser(User* loggedUser);
   void setFakedTripList(const std::list<Trip>& trips);
 
 protected:
-  UserPtr getLoggedUserFromSession() const override;
+  User* getLoggedUserFromSession() const override;
   std::list<Trip> findTripsByUser(User user) const override;
 
 private:
-  UserPtr _loggedUser { nullptr };
+  User* _loggedUser { nullptr };
   std::list<Trip> _trips;
 };
 
