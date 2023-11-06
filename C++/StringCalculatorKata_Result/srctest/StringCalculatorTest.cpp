@@ -41,3 +41,7 @@ TEST(StringCalculatorTestCase, OtherDelimitersThanCommasAreNotAllowedInNumberStr
   ASSERT_THROW(calculator.calculateSumOf("12;  30/ \n  300"), std::invalid_argument);
 }
 
+int main(int argc, char **argv) {
+  ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
+}
