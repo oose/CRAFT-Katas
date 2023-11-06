@@ -16,3 +16,7 @@ Currently the domain logic depends on the UI component which makes changing the 
 ## Task
 
 Refactor the code by inverting the abovementioned dependency: The UI shall depend upon the domain logic as we expect it to change more frequently.
+
+## Bonus
+
+Provide a possibility to add multiple UIs to the software. All UIs that currently registered shall receive the messages.
