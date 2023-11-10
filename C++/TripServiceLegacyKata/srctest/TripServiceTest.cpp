@@ -15,8 +15,8 @@ TEST (TripServiceTest, throwsExceptionIfUserIsNotLoggedIn) {
 TEST (TripServiceTest, usersAreNotFriendsThenReturnedTripListIsEmpty) {
   TripServiceTestadapter tripService { };
   User aUser(0);
-  UserPtr aLoggedUser = std::make_shared<User>(1);
-  tripService.setLoggedUser(aLoggedUser);
+  User aLoggedUser(1);
+  tripService.setLoggedUser(&aLoggedUser);
   ASSERT_TRUE(tripService.getTripsByUser(aUser).empty());
 }
 
@@ -24,9 +24,9 @@ TEST (TripServiceTest, usersAreFriendsThenReturnedTripListIsFilled) {
   TripServiceTestadapter tripService { };
 
   User aUser(0);
-  UserPtr aLoggedUser = std::make_shared<User>(1);
-  aUser.AddFriend(*aLoggedUser);
-  tripService.setLoggedUser(aLoggedUser);
+  User aLoggedUser(1);
+  aUser.AddFriend(aLoggedUser);
+  tripService.setLoggedUser(&aLoggedUser);
 
   std::list<Trip> trips;
   trips.push_back(Trip());

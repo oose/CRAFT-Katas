@@ -49,3 +49,8 @@ TEST(BowlingGameTestCase, ThePerfectGameIsScoredCorrectly) {
 
   ASSERT_EQ(300, game.getScore());
 }
+
+int main(int argc, char **argv) {
+  ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
+}

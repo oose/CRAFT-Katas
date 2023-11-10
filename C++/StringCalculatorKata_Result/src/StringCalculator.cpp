@@ -7,7 +7,7 @@ using Delimiter = boost::char_separator<char>;
 
 const std::string StringCalculator::ALLOWED_CHARACTERS_FOR_NUMBERSTRING = " \n\t,0123456789";
 
-int StringCalculator::calculateSumOf(std::experimental::string_view commaSeparatedNumberString) const {
+int StringCalculator::calculateSumOf(std::string_view commaSeparatedNumberString) const {
   checkNumberStringForIllegalCharacters(commaSeparatedNumberString);
   Tokenizer tokenizedNumberString = tokenizeNumberString(commaSeparatedNumberString);
   Numbers numbers = transformTokensToNumbers(tokenizedNumberString);
@@ -15,14 +15,14 @@ int StringCalculator::calculateSumOf(std::experimental::string_view commaSeparat
 }
 
 void StringCalculator::checkNumberStringForIllegalCharacters(
-    std::experimental::string_view commaSeparatedNumberString) const {
+    std::string_view commaSeparatedNumberString) const {
   if (commaSeparatedNumberString.find_first_not_of(
       ALLOWED_CHARACTERS_FOR_NUMBERSTRING) != std::string::npos) {
     throw std::invalid_argument("Number string contains illegal characters.");
   }
 }
 
-Tokenizer StringCalculator::tokenizeNumberString(std::experimental::string_view commaSeparatedNumberString) const {
+Tokenizer StringCalculator::tokenizeNumberString(std::string_view commaSeparatedNumberString) const {
   Delimiter allowedDelimiter(",");
   Tokenizer tokenizedNumberString(commaSeparatedNumberString, allowedDelimiter);
   return tokenizedNumberString;

@@ -1,10 +1,10 @@
 #include "TripServiceTestadapter.h"
 
-void TripServiceTestadapter::setLoggedUser(UserPtr loggedUser) {
+void TripServiceTestadapter::setLoggedUser(User* loggedUser) {
   _loggedUser = loggedUser;
 }
 
-UserPtr TripServiceTestadapter::getLoggedUserFromSession() const {
+User* TripServiceTestadapter::getLoggedUserFromSession() const {
   return _loggedUser;
 }
 
