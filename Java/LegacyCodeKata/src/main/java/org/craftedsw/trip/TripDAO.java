@@ -2,7 +2,7 @@ package org.craftedsw.trip;
 
 import java.util.List;
 
-import org.craftedsw.exceptions.DependendClassCallDuringUnitTestException;
+import org.craftedsw.exceptions.DependentClassCallDuringUnitTestException;
 import org.craftedsw.user.User;
 
 
@@ -10,7 +10,7 @@ import org.craftedsw.user.User;
 public class TripDAO {
 
 	public static List<Trip> findTripsByUser(User user) {
-		throw new DependendClassCallDuringUnitTestException(
+		throw new DependentClassCallDuringUnitTestException(
 				"TripDAO should not be invoked on an unit test.");
 	}
 	
